@@ -1,0 +1,11 @@
+.pageHeading {
+    height: 200px;
+    background: url("../../../img/heading.jpg");
+
+    .pageHeadingBox {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        color: #b9def0;
+    }
+}

@@ -1,2 +1,12 @@
 # shop-app
-React redux shop application
+React redux example shop application
+
+### Technologies:
+
+✔ JavaScript
+
+✔ React js
+
+✔ Redux
+
+✔ Firebase
