@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {updateSettingsByUrl} from "../actions/general";
+import {updateSettingsByUrl} from "../../actions/general";
 import {withRouter} from "react-router-dom";
+import CategoryLabels from "./CategoryLabels/CategoryLabels";
+import ShopItem from "./ShopItem";
 
-class ShopList extends Component {
+class Shop extends Component {
     componentDidMount() {
         const {location, updateSettings} = this.props;
         updateSettings(location.pathname);
     };
 
     render() {
-        return (<h1>В разработке...</h1>)
+        return (
+            <React.Fragment>
+                <CategoryLabels />
+                <ShopItem />
+            </React.Fragment>
+        );
     }
 }
 function mapDispatchToProps(dispatch) {
@@ -19,4 +26,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default withRouter(connect(null, mapDispatchToProps)(ShopList));
+export default withRouter(connect(null, mapDispatchToProps)(Shop));

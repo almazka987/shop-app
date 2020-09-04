@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NawBar from "../../components/NavBar/NavBar";
-import PageHeading from "../../components/UI/PageHeading/PageHeading";
+import PageHeading from "../../components/PageHeading/PageHeading";
 import Drawer from "../../components/Navigation/Drawer/Drawer";
 import MenuToggle from "../../components/Navigation/MenuToggle/MenuToggle";
 import cls from "./Layout.scss"
@@ -37,11 +37,13 @@ class Layout extends Component {
                 />
                 <NawBar countersLength={counters.length} />
                 <PageHeading pageTitle={pageTitle} />
-                <main className={cls.mainContainer}>
-                    <div className="container">
-                        {this.props.children}
-                    </div>
-                </main>
+                <div className="container">
+                    <main className={[cls.mainContainer, 'flat-wrapper'].join(' ')}>
+                        <div className="container">
+                            {this.props.children}
+                        </div>
+                    </main>
+                </div>
             </div>
         );
     }

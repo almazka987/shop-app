@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import CartItem from '../CartItem/CartItem';
 import cls from './ItemsList.scss';
-import {resetCounter, uploadCounters} from "../../actions/counter";
-import {removeItem} from "../../actions/cart";
-import {updateSettingsByUrl} from "../../actions/general";
+import {resetCounter, uploadCounters} from "../../../actions/counter";
+import {removeItem} from "../../../actions/cart";
+import {updateSettingsByUrl} from "../../../actions/general";
 import {withRouter} from "react-router-dom";
 
 class ItemsList extends Component {

@@ -1,7 +1,7 @@
 import {UPDATE_GENERAL_DATA} from "../actions/actionTypes";
 
 const initialState = {
-    currentPageTitle: '',
+    currentPageTitle: 'Страница не найдена',
     pages: [
         {id: 8906, pathname: '/', title: 'Магазин'},
         {id: 8096, pathname: '/cart', title: 'Корзина'},

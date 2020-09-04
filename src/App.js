@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import ItemsList from './components/ItemsList/ItemsList';
+import ItemsList from './components/Cart/ItemsList/ItemsList';
 import {Route, Switch} from "react-router-dom";
-import ShopList from "./components/shoplist";
 import Layout from "./hoc/Layout/Layout";
+import Shop from "./components/Shop/Shop";
 
 class App extends Component {
     render() {
         return (
             <Layout>
                 <Switch>
-                    <Route path="/" exact component={ShopList} />
+                    <Route path="/" exact component={Shop} />
                     <Route path="/cart" component={ItemsList} />
                     <Route render={() => <h1>404 not found!</h1>}/>
                 </Switch>
