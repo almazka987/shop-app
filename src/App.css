@@ -9,6 +9,10 @@ body {
     background-color: #f1cfcf57;
 }
 
+a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }

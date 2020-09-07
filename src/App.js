@@ -3,7 +3,7 @@ import './App.css';
 import ItemsList from './components/Cart/ItemsList/ItemsList';
 import {Route, Switch} from "react-router-dom";
 import Layout from "./hoc/Layout/Layout";
-import Shop from "./components/Shop/Shop";
+import Shop from "./components/Shop/Shop/Shop";
 
 class App extends Component {
     render() {
