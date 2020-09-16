@@ -2,12 +2,24 @@
 
 }
 
+.linkItem {
+    display: block;
+    max-width: 25%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.03);
+    padding: 30px;
+}
+
 .itemProduct {
 
 }
 
-.itemImg {
-
+.itemImg img {
+    max-width: 100%;
 }
 
 .itemActions {

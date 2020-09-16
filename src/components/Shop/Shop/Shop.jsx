@@ -11,7 +11,7 @@ class Shop extends Component {
         if (items.length > 0) {
           return items.map(obj => {
             return (
-                <ShopItem />
+                <ShopItem productData={obj} />
             );
         });
         } else {
